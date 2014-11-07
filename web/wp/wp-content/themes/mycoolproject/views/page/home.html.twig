@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <section class="content">
+        {% for article in articles %}
+            {% include 'partials/post.html.twig' %}
+        {% endfor %}
+    </section>
+{% endblock %}

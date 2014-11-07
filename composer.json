@@ -1,0 +1,39 @@
+{
+  "name": "myorganization/mycoolproject",
+  "type": "project",
+  "description": "Cool app to demonstrate using Twig as the templating engine with WP",
+  "autoload": {
+    "psr-0": {"MyCoolProject": "web/app/themes/mycooltheme/lib/MyCoolProject"}
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress/wordpress",
+        "version": "4.0",
+        "type": "webroot",
+        "dist": {
+          "type": "zip",
+          "url": "https://wordpress.org/wordpress-4.0.zip"
+        },
+        "require" : {
+          "fancyguy/webroot-installer": "1.1.0"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "wordpress/wordpress": "4.0",
+    "twig/twig": "~1.16",
+    "fancyguy/webroot-installer": "~1.1"
+  },
+  "extra": {
+    "webroot-dir": "web/wp",
+    "webroot-package": "wordpress/wordpress"
+  }
+}
