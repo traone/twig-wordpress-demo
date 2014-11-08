@@ -1,9 +1,9 @@
 {
   "name": "myorganization/mycoolproject",
   "type": "project",
-  "description": "Cool app to demonstrate using Twig as the templating engine with WP",
+  "description": "Cool app to demonstrate Twig with Wordpress",
   "autoload": {
-    "psr-0": {"MyCoolProject": "web/app/themes/mycooltheme/lib/MyCoolProject"}
+    "psr-4": {"MyCoolProject\\": "web/wp/wp-content/themes/mycoolproject/lib/MyCoolProject"}
   },
   "repositories": [
     {
@@ -27,7 +27,7 @@
     }
   ],
   "require": {
-    "php": ">=5.3.2",
+    "php": "~5.4",
     "wordpress/wordpress": "4.0",
     "twig/twig": "~1.16",
     "fancyguy/webroot-installer": "~1.1"

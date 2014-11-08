@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'MyCoolProject\\' => array($baseDir . '/web/wp/wp-content/themes/mycoolproject/lib/MyCoolProject'),
 );
